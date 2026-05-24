@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Абакумов Пётр — веб-разработчик · портфолио в разработке</title>
+<meta name="description" content="Персональный сайт Петра Абакумова: 15 лет в веб-разработке, B2B-каталоги на MODX, WordPress, Bitrix, Next.js. Полное портфолио появится здесь после релиза.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://petr-abakumow.github.io/portfolio/">
+<meta property="og:title" content="Абакумов Пётр — веб-разработчик">
+<meta property="og:description" content="15 лет с PHP, CMS, B2B-каталогами и Entity-First SEO. Портфолио в активной разработке.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://petr-abakumow.github.io/portfolio/">
+<meta property="og:locale" content="ru_RU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1a1a1a;
+    --surface: #282828;
+    --text: #fafafa;
+    --muted: #a0a0a0;
+    --dim: #6b6b6b;
+    --coral: #ff4d5a;
+    --border: #333;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { min-height: 100vh; }
+  body {
+    font-family: 'Raleway', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    line-height: 1.6;
+  }
+  main {
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+  }
+  .tag {
+    display: inline-block;
+    color: var(--coral);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(40px, 8vw, 72px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  h1 .accent { color: var(--coral); }
+  .sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 400;
+    color: var(--muted);
+    margin-bottom: 40px;
+  }
+  .intro {
+    font-size: clamp(15px, 2vw, 17px);
+    color: var(--muted);
+    max-width: 580px;
+    margin: 0 auto 40px;
+  }
+  .progress {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    max-width: 680px;
+    margin: 0 auto 48px;
+    text-align: left;
+  }
+  .progress li {
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .progress li.done { color: var(--text); border-color: rgba(255, 77, 90, 0.4); }
+  .progress li.done::before { content: '✓'; color: var(--coral); font-weight: 700; }
+  .progress li.todo::before { content: '○'; color: var(--dim); }
+  .cta-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .cta--primary { border: 2px solid var(--coral); color: var(--coral); }
+  .cta--primary:hover { background: var(--coral); color: var(--bg); }
+  .cta--secondary { border: 1px solid #4d4d4d; color: var(--text); }
+  .cta--secondary:hover { border-color: var(--text); }
+  footer {
+    margin-top: 64px;
+    color: var(--dim);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  footer a { color: var(--dim); text-decoration: none; }
+  footer a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+  <span class="tag">Portfolio · v0.1 · in progress</span>
+  <h1>Привет, я <span class="accent">Пётр</span>.</h1>
+  <p class="sub">Веб-разработчик · 15 лет с PHP, CMS и&nbsp;B2B-каталогами</p>
+  <p class="intro">
+    Этот сайт пока строится — финальный релиз с кейсами по&nbsp;fasov.ru, fordela.ru, technikin.ru, profdela.ru,
+    markettd.ru, b2b-nn.ru, svetoch152.ru, описанием стека и&nbsp;контактной формой появится здесь в&nbsp;ближайшие дни.
+  </p>
+  <ul class="progress">
+    <li class="done">Дизайн-система</li>
+    <li class="done">Wireframe Desktop</li>
+    <li class="todo">Wireframe Mobile</li>
+    <li class="todo">Контент RU + EN</li>
+    <li class="todo">Next.js + Schema.org</li>
+    <li class="todo">Telegram-форма</li>
+  </ul>
+  <div class="cta-row">
+    <a class="cta cta--primary" href="https://t.me/PetrAbakumov">Telegram <span>→</span></a>
+    <a class="cta cta--secondary" href="mailto:abakumow.p.a@gmail.com">Email</a>
+  </div>
+  <footer>
+    Абакумов Пётр · Нижний Новгород · 2026 ·
+    <a href="https://github.com/petr-abakumow/portfolio">GitHub</a>
+  </footer>
+</main>
+</body>
+</html>
