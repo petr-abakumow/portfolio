@@ -41,3 +41,6 @@ desktop.ini
 
 # Локальный research (HTML/CSS референсов)
 _research/
+
+# GitHub PAT (для gh CLI операций)
+.gh-token
