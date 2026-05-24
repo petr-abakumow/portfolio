@@ -46,11 +46,11 @@
 
 ## Список проектов в портфолио (минимум — все 5 публичных + локальные WORKED)
 Публичные сайты (доступы будут позже):
-- **fasov.ru** — фасовка/упаковка пищёвки и HoReCa
-- **profdela.ru** — комплексное снабжение бизнеса, 11+ городов
-- **markettd.ru** — печать этикеток/наклеек, с 2014
-- **b2b-nn.ru** — опт упаковки/спецодежды/медрасходки, Bitrix + Aspro Max
-- **fordela.ru** — оптовый магазин расходников (10к+ наименований), MODX + miniShop2
+- **fasov.ru** — фасовка/упаковка пищёвки и HoReCa · **OpenCart**
+- **profdela.ru** — комплексное снабжение бизнеса, 11+ городов · **OpenCart**
+- **markettd.ru** — печать этикеток/наклеек, с 2014 · **OpenCart**
+- **b2b-nn.ru** — опт упаковки/спецодежды/медрасходки · **Bitrix + Aspro Max**
+- **fordela.ru** — оптовый магазин расходников (10к+ наименований) · **MODX + miniShop2**
 
 Локальные/закрытые (по согласованию могут попасть в кейсы):
 - **technikin.ru** — WordPress + WooCommerce, B2B ГОСТ/DIN фурнитура, кастомные mu-плагины
@@ -60,7 +60,7 @@
 Каждый кейс: превью (скриншот) + ссылка + краткое описание (что было, какой стек, что сделано, какой результат).
 
 ## Технологии для секции «Стек» (не упустить)
-PHP 7/8, MySQL, MariaDB · MODX Revolution + miniShop2 · WordPress + WooCommerce · 1С-Bitrix + Aspro · Кастомный PHP без фреймворков · Node.js, Next.js, TypeScript, Tailwind · HTML5, CSS3, SCSS, **БЭМ** · JavaScript ES6+, Vanilla JS · **Git**, GitHub · MQL5, Python · Figma + Figma Plugin API · MCP, Claude Code, AI-агенты · Schema.org, Entity-First SEO, GEO · FTP/SFTP, Beget, reg.ru, Laragon
+PHP 7/8, MySQL, MariaDB · **OpenCart** (3 магазина: fasov, profdela, markettd) · MODX Revolution + miniShop2 · WordPress + WooCommerce · 1С-Bitrix + Aspro · Кастомный PHP без фреймворков · Node.js, Next.js, TypeScript, Tailwind · HTML5, CSS3, SCSS, **БЭМ** · JavaScript ES6+, Vanilla JS · **Git**, GitHub · MQL5, Python · Figma + Figma Plugin API · MCP, Claude Code, AI-агенты · Schema.org, Entity-First SEO, GEO · FTP/SFTP, Beget, reg.ru, Laragon
 
 ## Расположение материалов
 - **Knowledge base:** `C:\Users\Petr\Desktop\WORKED\knowledge\` — методологии (Entity-First SEO в `NEW_SEO_AI.docx`, копирайтинг, UX/UI, prompt-engineering, ТРИЗ, sw-architecture). Загружать точечно по запросу.

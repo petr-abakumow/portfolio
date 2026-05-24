@@ -49,6 +49,7 @@ export const STACK: StackGroup[] = [
   {
     title: { ru: 'CMS и платформы', en: 'CMS & Platforms' },
     items: [
+      { n: 'OpenCart', t: { ru: '3 магазина', en: '3 stores' } },
       { n: 'MODX Revolution', t: { ru: 'CMS · c 2016', en: 'CMS · since 2016' } },
       { n: 'WordPress + Woo', t: { ru: 'CMS · c 2014', en: 'CMS · since 2014' } },
       { n: '1C-Bitrix', t: { ru: '4 года', en: '4 years' } },
@@ -108,17 +109,17 @@ export const PROJECTS: Project[] = [
     slug: 'fasov',
     url: 'fasov.ru',
     liveUrl: 'https://fasov.ru',
-    cat: { ru: 'Кастомная CMS', en: 'Custom CMS' },
-    role: { ru: 'Веб-разработчик · автор', en: 'Web developer · author' },
+    cat: { ru: 'OpenCart', en: 'OpenCart' },
+    role: { ru: 'Веб-разработчик', en: 'Web developer' },
     title: {
       ru: 'Упаковка для пищевой промышленности и HoReCa',
       en: 'Packaging for food industry and HoReCa',
     },
     desc: {
-      ru: 'B2B-сайт компании по фасовке и упаковке. Каталог услуг (стики, саше, дой-пак, флоу-пак), оборудование, готовая продукция. Кастомный движок без коробочной CMS — это даёт полный контроль над структурой каталога и SEO.',
-      en: 'B2B site for a packaging company. Service catalog (sticks, sachets, doy-pack, flow-pack), equipment, ready products. Custom engine without boxed CMS — full control over catalog structure and SEO.',
+      ru: 'B2B-сайт компании по фасовке и упаковке. Магазин на OpenCart с кастомными модулями: каталог услуг (стики, саше, дой-пак, флоу-пак), оборудование, готовая продукция. Структура каталога подогнана под бизнес-логику, шаблон переписан под фирменный стиль.',
+      en: 'B2B site for a packaging company. OpenCart store with custom modules: service catalog (sticks, sachets, doy-pack, flow-pack), equipment, ready products. Catalog structure adapted to business logic, theme rewritten for brand style.',
     },
-    stack: ['PHP 8', 'MySQL', 'HTML5 · CSS3 · БЭМ', 'JavaScript', 'Schema.org'],
+    stack: ['OpenCart', 'PHP 8', 'MySQL', 'HTML5 · CSS3 · БЭМ', 'JavaScript'],
   },
   {
     slug: 'fordela',
@@ -156,33 +157,33 @@ export const PROJECTS: Project[] = [
     slug: 'profdela',
     url: 'profdela.ru',
     liveUrl: 'https://profdela.ru',
-    cat: { ru: 'E-commerce платформа', en: 'E-commerce platform' },
+    cat: { ru: 'OpenCart', en: 'OpenCart' },
     role: { ru: 'Веб-разработчик', en: 'Web developer' },
     title: {
       ru: 'Комплексное снабжение бизнеса — 11 городов России',
       en: 'Business supply platform — 11 cities of Russia',
     },
     desc: {
-      ru: 'B2B-платформа, поставляющая оборудование и расходники для розницы, медучреждений, ресторанов, отелей и производств. Каталог по отраслям, региональная сеть, форма обратного звонка, поддержка по всей стране.',
-      en: 'B2B platform supplying equipment and consumables for retail, medical, restaurants, hotels and production. Industry catalog, regional network, callback form, nationwide support.',
+      ru: 'B2B-платформа на OpenCart, поставляющая оборудование и расходники для розницы, медучреждений, ресторанов, отелей и производств. Каталог по отраслям с десятками категорий, региональная сеть филиалов в 11 городах, форма обратного звонка, страница «о компании», поддержка по всей стране.',
+      en: 'B2B platform on OpenCart, supplying equipment and consumables for retail, medical, restaurants, hotels and production. Industry catalog with dozens of categories, regional network in 11 cities, callback form, "about" page, nationwide support.',
     },
-    stack: ['PHP', 'MySQL', 'JavaScript', 'HTML · CSS · БЭМ'],
+    stack: ['OpenCart', 'PHP', 'MySQL', 'JavaScript', 'HTML · CSS · БЭМ'],
   },
   {
     slug: 'markettd',
     url: 'markettd.ru',
     liveUrl: 'https://markettd.ru',
-    cat: { ru: 'E-commerce + полиграфия', en: 'E-commerce + print' },
+    cat: { ru: 'OpenCart', en: 'OpenCart' },
     role: { ru: 'Веб-разработчик', en: 'Web developer' },
     title: {
       ru: 'Печать этикеток и наклеек от производителя · с 2014',
       en: 'Label and sticker printing from manufacturer · since 2014',
     },
     desc: {
-      ru: 'Сайт типографии. Семьдесят с лишним категорий продукции, корзина, примеры работ, два офиса (Москва и Санкт-Петербург). Иерархическая навигация по каталогу, форма заказа звонка, информационные разделы о доставке и оплате.',
-      en: '70+ product categories, cart, work samples, two offices (Moscow and St. Petersburg). Hierarchical catalog, callback form, info pages about delivery and payment.',
+      ru: 'Сайт типографии на OpenCart с переписанным шаблоном. Семьдесят с лишним категорий продукции, корзина, галерея примеров работ, два офиса (Москва и Санкт-Петербург). Иерархическая навигация по каталогу, форма заказа звонка, информационные разделы о доставке и оплате.',
+      en: 'Print shop site on OpenCart with rewritten theme. 70+ product categories, cart, work samples gallery, two offices (Moscow and St. Petersburg). Hierarchical catalog, callback form, info pages about delivery and payment.',
     },
-    stack: ['PHP', 'MySQL', 'JavaScript', 'SVG'],
+    stack: ['OpenCart', 'PHP', 'MySQL', 'JavaScript', 'SVG'],
   },
   {
     slug: 'b2b-nn',
