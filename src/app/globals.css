@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg-base text-text-primary font-body antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgba(255, 77, 90, 0.4);
+    color: #fafafa;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto px-6 md:px-12 lg:px-20;
+    max-width: 1280px;
+  }
+
+  .h-section {
+    @apply font-heading font-bold tracking-tight text-h2 text-text-primary;
+  }
+
+  .h-eyebrow {
+    @apply font-heading font-medium text-[12px] tracking-widest2 text-accent-coral uppercase;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-8 py-3 rounded-2 font-heading font-semibold text-sm tracking-wider2 uppercase transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn border-2 border-accent-coral text-accent-coral hover:bg-accent-coral hover:text-bg-base;
+  }
+
+  .btn-secondary {
+    @apply btn border border-line-strong text-text-primary hover:border-text-primary;
+  }
+
+  .btn-solid {
+    @apply btn bg-accent-coral text-bg-base hover:bg-accent-coral/90;
+  }
+
+  .chip {
+    @apply inline-flex items-center px-2.5 py-1 rounded-[4px] bg-bg-elevated border border-line-subtle font-heading font-medium text-[11px] text-text-primary;
+  }
+
+  .underline-coral {
+    position: relative;
+  }
+  .underline-coral::after {
+    content: '';
+    @apply block w-[60px] h-[3px] bg-accent-coral mt-3;
+  }
+}
