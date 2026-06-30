@@ -132,10 +132,11 @@ export const PROJECTS: Project[] = [
       en: 'Wholesale store of consumables · 10 000+ items',
     },
     desc: {
-      ru: 'Крупнейший живой проект в стеке MODX Revolution + miniShop2: 1304 опубликованных товара, 86 категорий, фильтрация по отраслям и типам помещений. HoReCa, медицина, розница, логистика. Цены по запросу, корзина, B2B-сценарии.',
-      en: 'Largest live project on MODX Revolution + miniShop2: 1304 published items, 86 categories, filtering by industries. HoReCa, medical, retail, logistics. Price-on-request, cart, B2B flows.',
+      ru: 'Оптовый каталог на MODX Revolution + miniShop2, сейчас в активной разработке: 1304 товара опубликовано, в каталоге свыше 10 000 позиций, 86 категорий, фильтрация по отраслям и типам помещений. HoReCa, медицина, розница, логистика. Цены по запросу, корзина, B2B-сценарии.',
+      en: 'Wholesale catalog on MODX Revolution + miniShop2, currently in active development: 1304 items published, 10 000+ in the catalog, 86 categories, filtering by industries. HoReCa, medical, retail, logistics. Price-on-request, cart, B2B flows.',
     },
     stack: ['MODX Revolution', 'miniShop2', 'PHP 8', 'MySQL', 'Beget'],
+    badge: { ru: 'в разработке', en: 'in progress' },
   },
   {
     slug: 'technikin',
@@ -196,8 +197,8 @@ export const PROJECTS: Project[] = [
       en: 'Wholesale packaging, workwear and medical supplies · Volga region',
     },
     desc: {
-      ru: 'Доработка и кастомизация коробочного решения 1С-Bitrix на теме Aspro Max. Восемь базовых категорий, фильтры, личный кабинет клиента, отзывы, бренды-партнёры, отдельные сервисные услуги (печать, маркировка), интеграция с 1С.',
-      en: 'Customization of boxed 1C-Bitrix solution on Aspro Max theme. 8 basic categories, filters, customer cabinet, reviews, partner brands, service offerings (printing, labeling), 1C integration.',
+      ru: 'Самый крупный из живых проектов. Доработка и кастомизация коробочного решения 1С-Bitrix на теме Aspro Max: каталог по отраслям, фильтры, личный кабинет клиента, отзывы, бренды-партнёры, отдельные сервисные услуги (печать, маркировка), интеграция с 1С.',
+      en: 'The largest live project. Customization of a boxed 1C-Bitrix solution on Aspro Max theme: industry catalog, filters, customer cabinet, reviews, partner brands, service offerings (printing, labeling), 1C integration.',
     },
     stack: ['1C-Bitrix', 'Aspro Max', 'PHP', 'jQuery', '1С интеграция'],
     badge: { ru: 'тема Aspro Max', en: 'Aspro Max theme' },
@@ -247,8 +248,8 @@ export const ABOUT = {
     en: 'I build online stores, corporate sites and SEO.',
   },
   bio1: {
-    ru: 'Веб-разработкой занимаюсь с 2011 года — это уже пятнадцатый год. За это время через мои руки прошли пять оптовых каталогов на MODX, WordPress и Bitrix, один сайт православного ансамбля на чистом PHP без фреймворков и десятки лендингов. Самый крупный из живых проектов — fordela.ru с десятью тысячами наименований.',
-    en: "I've been doing web development since 2011 — this is my fifteenth year. Five wholesale catalogs on MODX, WordPress and Bitrix have passed through my hands, plus a site for an Orthodox ensemble in pure PHP and dozens of landing pages. The largest live project is fordela.ru with ten thousand items.",
+    ru: 'Веб-разработкой занимаюсь с 2011 года — это уже пятнадцатый год. За это время через мои руки прошли пять оптовых каталогов на MODX, WordPress и Bitrix, один сайт православного ансамбля на чистом PHP без фреймворков и десятки лендингов. Самый крупный из живых проектов — b2b-nn.ru, оптовая платформа упаковки и спецодежды на 1С-Bitrix. Ещё один большой каталог, fordela.ru на MODX, сейчас в активной разработке.',
+    en: "I've been doing web development since 2011 — this is my fifteenth year. Five wholesale catalogs on MODX, WordPress and Bitrix have passed through my hands, plus a site for an Orthodox ensemble in pure PHP and dozens of landing pages. The largest live project is b2b-nn.ru, a wholesale platform for packaging and workwear on 1C-Bitrix. Another large catalog, fordela.ru on MODX, is currently in active development.",
   },
   bio2: {
     ru: 'С 2024-го перешёл на новую методологию — Entity-First SEO под AI-поисковики: Google AI Overviews, Yandex Neuro, ChatGPT Search, Perplexity. Это уже не про набивание ключевиков, а про сущности, триплеты и knowledge-graph. Если коротко — пишу сайты, которые AI цитирует, а не игнорирует.',
