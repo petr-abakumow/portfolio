@@ -3,12 +3,16 @@ import { I18N, PROJECTS } from '@/lib/data';
 import { asset } from '@/lib/asset';
 import SectionHeading from './SectionHeading';
 
+// Метка перехода из портфолио: даёт подвалам сайтов сигнал показать атрибуцию.
+// Дублирует Referer (на случай браузеров с приватностью). НЕ ставим на schema.org url.
+const withRef = (u: string) => `${u}${u.includes('?') ? '&' : '?'}ref=pf`;
+
 function PreviewWindow({ slug, url, href, alt }: { slug: string; url: string; href: string; alt: string }) {
   return (
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener"
       aria-label={alt}
       className="group block w-full rounded-10 bg-bg-surface border border-line-subtle overflow-hidden hover:border-accent-coral/50 transition-colors"
     >
@@ -56,7 +60,7 @@ export default function Projects({ lang }: { lang: Lang }) {
                   <PreviewWindow
                     slug={p.slug}
                     url={p.url}
-                    href={p.liveUrl}
+                    href={withRef(p.liveUrl)}
                     alt={lang === 'ru' ? `Скриншот сайта ${p.url}` : `Screenshot of ${p.url}`}
                   />
                 </div>
@@ -97,9 +101,9 @@ export default function Projects({ lang }: { lang: Lang }) {
 
                   <div className="flex flex-wrap gap-3 mt-3">
                     <a
-                      href={p.liveUrl}
+                      href={withRef(p.liveUrl)}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2 border-2 border-accent-coral text-accent-coral font-heading font-semibold text-xs tracking-widest2 hover:bg-accent-coral hover:text-bg-base transition-colors"
                     >
                       {I18N.projects.live[lang]}
