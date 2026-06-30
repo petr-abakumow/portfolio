@@ -24,9 +24,12 @@ const jetbrains = JetBrains_Mono({
 });
 
 const SITE_URL = 'https://petr-abakumow.github.io/portfolio';
+// Origin без basePath: иначе Next задваивает /portfolio в og:image/twitter:image
+// (route уже получает basePath, а metadataBase добавил бы /portfolio второй раз).
+const SITE_ORIGIN = 'https://petr-abakumow.github.io';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(SITE_ORIGIN),
   title: {
     default: 'Абакумов Пётр — веб-разработчик · B2B-каталоги · Entity-First SEO',
     template: '%s — Абакумов Пётр',

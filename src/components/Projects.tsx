@@ -1,25 +1,34 @@
 import type { Lang } from '@/lib/data';
 import { I18N, PROJECTS } from '@/lib/data';
+import { asset } from '@/lib/asset';
 import SectionHeading from './SectionHeading';
 
-function PreviewWindow({ url, name }: { url: string; name: string }) {
+function PreviewWindow({ slug, url, href, alt }: { slug: string; url: string; href: string; alt: string }) {
   return (
-    <div className="w-full aspect-[16/9] rounded-10 bg-bg-surface border border-line-subtle overflow-hidden">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={alt}
+      className="group block w-full rounded-10 bg-bg-surface border border-line-subtle overflow-hidden hover:border-accent-coral/50 transition-colors"
+    >
       <div className="h-7 bg-bg-elevated flex items-center gap-1.5 px-3">
         <span className="w-2 h-2 rounded-full bg-accent-coral" />
         <span className="w-2 h-2 rounded-full bg-yellow-400" />
         <span className="w-2 h-2 rounded-full bg-green-500" />
         <span className="ml-3 font-heading font-medium text-[11px] text-text-dim">{url}</span>
       </div>
-      <div className="p-6 flex flex-col gap-2">
-        <span className="font-heading font-semibold text-sm text-text-dim tracking-[1.5px]">
-          preview · {name}
-        </span>
-        <span className="font-body text-xs text-text-dim/60">
-          [placeholder · реальный скриншот будет добавлен после релиза]
-        </span>
+      <div className="aspect-[16/10] overflow-hidden bg-bg-base">
+        <img
+          src={asset(`/shots/${slug}.webp`)}
+          alt={alt}
+          loading="lazy"
+          width={1024}
+          height={640}
+          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+        />
       </div>
-    </div>
+    </a>
   );
 }
 
@@ -44,7 +53,12 @@ export default function Projects({ lang }: { lang: Lang }) {
                 }`}
               >
                 <div className="lg:w-1/2 w-full">
-                  <PreviewWindow url={p.url} name={p.url} />
+                  <PreviewWindow
+                    slug={p.slug}
+                    url={p.url}
+                    href={p.liveUrl}
+                    alt={lang === 'ru' ? `Скриншот сайта ${p.url}` : `Screenshot of ${p.url}`}
+                  />
                 </div>
 
                 <div className="lg:w-1/2 w-full flex flex-col gap-3">
@@ -91,12 +105,6 @@ export default function Projects({ lang }: { lang: Lang }) {
                       {I18N.projects.live[lang]}
                       <span aria-hidden>↗</span>
                     </a>
-                    <button
-                      type="button"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2 border border-line-strong text-text-primary font-heading font-medium text-xs tracking-widest2 hover:border-text-primary transition-colors"
-                    >
-                      {I18N.projects.details[lang]}
-                    </button>
                   </div>
                 </div>
               </article>
