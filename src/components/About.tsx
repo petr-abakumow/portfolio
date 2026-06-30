@@ -1,5 +1,6 @@
 import type { Lang } from '@/lib/data';
 import { ABOUT } from '@/lib/data';
+import { asset } from '@/lib/asset';
 import SectionHeading from './SectionHeading';
 
 export default function About({ lang }: { lang: Lang }) {
@@ -10,16 +11,14 @@ export default function About({ lang }: { lang: Lang }) {
 
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 w-full">
           <div className="shrink-0 w-[200px] h-[200px] md:w-[280px] md:h-[280px] rounded-full bg-bg-surface border-2 border-accent-coral relative overflow-hidden">
-            <svg
-              viewBox="0 0 280 280"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-full h-full"
-              aria-hidden
-            >
-              <circle cx="140" cy="105" r="55" stroke="#fafafa" strokeWidth="9" />
-              <ellipse cx="140" cy="270" rx="125" ry="95" stroke="#fafafa" strokeWidth="9" />
-            </svg>
+            <img
+              src={asset('/petr.webp')}
+              alt={lang === 'ru' ? 'Пётр Абакумов — веб-разработчик' : 'Petr Abakumov — web developer'}
+              width={280}
+              height={280}
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           <div className="flex flex-col gap-4 max-w-2xl">
